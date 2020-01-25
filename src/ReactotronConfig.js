@@ -1,3 +1,5 @@
-import Reactotron from 'reactotron-react-js';
+import Reactotron, { openInEditor } from 'reactotron-react-js';
 
-Reactotron.configure().connect();
+Reactotron.configure()
+  .use(openInEditor())
+  .connect();
